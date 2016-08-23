@@ -4,9 +4,10 @@ suites:
         psr4_prefix: Rs\Stack\PhpDotEnv\
 
 extensions:
-    - PhpSpec\Extension\CodeCoverageExtension
-
-code_coverage:
-  whitelist: [src]
-  format:
-    - text
+    PhpSpecCodeCoverage\CodeCoverageExtension:
+      whitelist: [src]
+      format:
+        - text
+        - clover
+      output:
+        clover: coverage.xml
