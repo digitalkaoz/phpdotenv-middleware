@@ -18,8 +18,7 @@ before_script:
   - bash -c 'if [ "$TRAVIS_PHP_VERSION" == "5.6" ]; then cp phpspec.yml.coverage phpspec.yml.dist; fi;'
   - bash -c 'if [ "$TRAVIS_PHP_VERSION" == "5.6" ]; then composer require --dev henrikbjorn/phpspec-code-coverage; fi;'
 
-  #composer
-  - composer self-update
+  #deps
   - bash -c 'if [ "$TRAVIS_PHP_VERSION" == "5.5" ]; then composer update --prefer-stable --prefer-lowest -o --prefer-dist; else composer update --prefer-stable -o --prefer-dist; fi;'
 after_script:
   #coverage
