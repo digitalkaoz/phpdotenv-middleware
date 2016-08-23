@@ -20,12 +20,12 @@ $ composer require digitalkaoz/phpdotenv-middleware
 ## Usage
 
 ```php
-$middleware = new Rs\Stack\PhpDotEnv\Middlware($app, __DIR__, '.env');
+$middleware = new Rs\Stack\PhpDotEnv\Middleware($app, __DIR__, '.env');
 
 //or with `stack/builder`
 
 $stack = (new Stack\Builder())
-    ->push('Rs\Stack\PhpDotEnv\Middlware', __DIR__.'/../')
+    ->push('Rs\Stack\PhpDotEnv\Middleware', __DIR__.'/../')
 ;
 ```
 
