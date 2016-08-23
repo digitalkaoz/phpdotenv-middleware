@@ -1,0 +1,4 @@
+suites:
+    default:
+        namespace: Rs\Stack\PhpDotEnv\
+        psr4_prefix: Rs\Stack\PhpDotEnv\

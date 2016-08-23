@@ -1,0 +1,12 @@
+suites:
+    default:
+        namespace: Rs\Stack\PhpDotEnv\
+        psr4_prefix: Rs\Stack\PhpDotEnv\
+
+extensions:
+    - PhpSpec\Extension\CodeCoverageExtension
+
+code_coverage:
+  whitelist: [src]
+  format:
+    - text

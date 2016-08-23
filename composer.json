@@ -1,0 +1,36 @@
+{
+    "name": "digitalkaoz/phpdotenv-middleware",
+    "description": "StackPHP Middleware for loading Environment Variables through PHPDotEnv",
+    "type": "library",
+    "homepage": "https://github.com/digitalkaoz/phpdotenv-middleware",
+    "keywords": [
+        "stackphp",
+        "middleware",
+        "phpdotenv"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Schönthal",
+            "email": "robert.schoenthal@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5",
+        "symfony/http-kernel": "^2.1 | ^3.1",
+        "vlucas/phpdotenv" : "^1.1 | ^2.0"
+    },
+    "scripts" : {
+        "cs" : "php-cs-fixer --allow-risky=yes fix",
+        "test" : "vendor/bin/phpspec run -f pretty -vv --ansi",
+        "coverage" : "phpspec run -f pretty -vv --ansi -c phpspec.yml.coverage"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^2.0 | ^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rs\\Stack\\PhpDotEnv\\": "src"
+        }
+    }
+}
